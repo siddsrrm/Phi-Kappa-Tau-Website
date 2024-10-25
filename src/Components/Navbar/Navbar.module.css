@@ -8,6 +8,20 @@
     z-index: 100;
 }
 
+.logoContainer {
+    display: flex;              
+    justify-content: flex-start; 
+    margin-left: 10px;
+    margin-top: -10px;       
+    width: 100%;                
+                     
+}
+
+.logoImg {
+    width: 70px;                
+}
+
+
 .navbarFixed {
     position: sticky;
     top: 0;
