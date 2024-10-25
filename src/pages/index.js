@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Navbar } from "../Components/Navbar/Navbar"
+import '../index.css'
 
 
 const IndexPage = () => {

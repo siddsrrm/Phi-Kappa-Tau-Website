@@ -21,7 +21,13 @@ export const Navbar = () => {
     <nav className={fix ? styles.navbarFixed : styles.navbar}> 
         <div className={styles.logoContainer}>
             <img src={logo} alt='logo' className={styles.logoImg}/>
+            <div>
+                <h1 className={styles.name}>PHI KAPPA TAU</h1>
+                <h1 className={styles.schoolName}>Purdue</h1>
+            </div>
+
         </div>
+        
         <ul className={styles.navItems}>
             <li>
                 <a href="#home">Home</a>
@@ -30,7 +36,7 @@ export const Navbar = () => {
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#rush">Rush</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
