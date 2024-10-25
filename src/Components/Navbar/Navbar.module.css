@@ -36,6 +36,11 @@
     height: 100%;                
 }
 
+.instaImg {
+    width: 40px;
+    margin-top: -10px;
+}
+
 
 .navbarFixed {
     position: sticky;

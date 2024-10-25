@@ -2,6 +2,7 @@ import React from 'react'
 import * as styles from './Navbar.module.css'
 import { useState } from 'react'
 import logo from '../../Images/logo.png'
+import instaLogo from '../../Images/instaPng.png'
 
 
 export const Navbar = () => {
@@ -41,6 +42,9 @@ export const Navbar = () => {
             <li>
                 <a href="#contact">Contact</a>
             </li> 
+            <a href="https://www.instagram.com/phitau_purdue/" target="_blank" rel="noopener noreferrer">
+                <img src={instaLogo} alt="Github icon" className={styles.instaImg}/>
+            </a>
         </ul>            
     </nav>
   )
