@@ -1,25 +1,12 @@
 import React from 'react'
 import * as styles from './Navbar.module.css'
-import { useState } from 'react'
 import logo from '../../Images/logo.png'
 import instaLogo from '../../Images/instaPng.png'
 
 
 export const Navbar = () => {
-    const [fix, setFix] = useState(false)
-
-    function setFixed() {
-        if (window.scrollY >= 10) {
-            setFix(true)
-        }
-        else {
-            setFix(false)
-        }
-    }
-
-    window.addEventListener("scroll", setFixed)
   return (
-    <nav className={fix ? styles.navbarFixed : styles.navbar}> 
+    <nav className={styles.navbar}> 
         <div className={styles.logoContainer}>
             <img src={logo} alt='logo' className={styles.logoImg}/>
             <div>
