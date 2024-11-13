@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prociono&family=Roboto+Slab:wght@100..900&display=swap');
+
+.container {
+    width: 50%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: "Roboto Slab", serif; 
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.text {
+    margin-top : 20px;
+    font-weight: 400;
+    font-family: "Roboto Slab", serif; 
+    line-height: 1.6;
+    max-height: 100%;
+}
