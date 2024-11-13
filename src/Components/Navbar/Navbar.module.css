@@ -59,7 +59,7 @@
     position:relative;
 }
 
-.navItems a::after {
+.navItems a:not(.insta)::after {
     content: '';
     height: 2px;
     width: 100%;
@@ -72,9 +72,7 @@
     pointer-events: none;
 }
 
-
-
-.navItems a:hover::after {
+.navItems a:not(.insta):hover::after {
     opacity: 1;
     
 }

@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 85vh; 
+}
+
+.img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.redBackground {
+    width: 50%; 
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    padding: 20px; 
+}
+
+.title {
+    color: gold;
+    font-size: 60px;
+    margin-bottom: 20px; 
+    font-family: "Roboto Slab", serif;
+}
+
+.button {
+    background-color: gold;
+    color: black; 
+    padding: 20px 30px; 
+    border: none; 
+    border-radius: 0; 
+    font-size: 16px; 
+    cursor: pointer; 
+    text-align: center;
+    margin-top: 50px; 
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: darkgoldenrod;
+}

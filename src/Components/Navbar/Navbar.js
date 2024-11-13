@@ -2,6 +2,7 @@ import React from 'react'
 import * as styles from './Navbar.module.css'
 import logo from '../../Images/logo.png'
 import instaLogo from '../../Images/instaPng.png'
+import { Link } from 'gatsby'
 
 
 export const Navbar = () => {
@@ -18,18 +19,18 @@ export const Navbar = () => {
         
         <ul className={styles.navItems}>
             <li>
-                <a href="#home">Home</a>
+                <Link to="/">Home</Link>
             </li>
             <li>
-                <a href="#about">About</a>
+                <Link to="/about">About</Link>
             </li>
             <li>
-                <a href="#rush">Rush</a>
+                <Link to="/rush">Rush</Link>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <Link to="/contact">Contact</Link>
             </li> 
-            <a href="https://www.instagram.com/phitau_purdue/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/phitau_purdue/" target="_blank" rel="noopener noreferrer" className={styles.insta}>
                 <img src={instaLogo} alt="Github icon" className={styles.instaImg}/>
             </a>
         </ul>            
