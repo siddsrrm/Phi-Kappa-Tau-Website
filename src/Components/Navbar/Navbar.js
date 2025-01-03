@@ -30,7 +30,7 @@ export const Navbar = () => {
             <li>
                 <Link to="/contact">Contact</Link>
             </li> 
-            <a href="https://www.instagram.com/phitau_purdue/" target="_blank" rel="noopener noreferrer" className={styles.insta}>
+            <a href="https://www.instagram.com/phitaupurdue/" target="_blank" rel="noopener noreferrer" className={styles.insta}>
                 <img src={instaLogo} alt="Github icon" className={styles.instaImg}/>
             </a>
         </ul>            

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Navbar } from "../Components/Navbar/Navbar"
 import {HomePageStart} from "../Components/HomePageStart/HomePageStart"
 import { WhyPKT } from "../Components/WhyPKT/WhyPKT"
+import { ChapterFacts } from "../Components/ChapterFacts/ChapterFacts"
 import '../index.css'
 
 
@@ -11,6 +12,7 @@ const IndexPage = () => {
         <Navbar />
         <HomePageStart />
         <WhyPKT />
+        <ChapterFacts />
     </section>
   )
 }
