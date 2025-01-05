@@ -1,0 +1,53 @@
+
+.factsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 40px;
+}
+
+.factCircle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: maroon;
+    color: gold;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 33px;
+}
+
+.factTitle{
+    font-family: "Roboto Slab", serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.factValue{
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+
+.title{
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 45px;
+    padding: 60px;
+    position: relative;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 25%;
+    top: 120px;
+    left: 500px;
+    bottom: -25px;
+    border-top: 5px solid maroon;
+    border-radius: 40%;
+}
