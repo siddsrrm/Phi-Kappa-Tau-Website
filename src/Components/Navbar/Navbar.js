@@ -31,7 +31,7 @@ export const Navbar = () => {
                 <Link to="/contact">Contact</Link>
             </li> 
             <a href="https://www.instagram.com/phitaupurdue/" target="_blank" rel="noopener noreferrer" className={styles.insta}>
-                <img src={instaLogo} alt="Github icon" className={styles.instaImg}/>
+                <img src={instaLogo} alt="Insta icon" className={styles.instaImg}/>
             </a>
         </ul>            
     </nav>
