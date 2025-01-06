@@ -1,0 +1,7 @@
+.form {
+    width: 100%;
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add some spacing */
+  }
+  
