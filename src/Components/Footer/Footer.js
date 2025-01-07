@@ -9,8 +9,8 @@ export const Footer = () => {
         <div className={styles.titleAddress}> 
             <h3 className={styles.name}>Purdue Phi Tau</h3>
             <div className={styles.address}>
-                <span> 416 N Chauncey Avenue</span>
-                <span> West Lafayette, IN 47906</span>
+                <span className={styles.text}> 416 N Chauncey Avenue</span>
+                <span className={styles.text}> West Lafayette, IN 47906</span>
             </div>
         </div>
         
