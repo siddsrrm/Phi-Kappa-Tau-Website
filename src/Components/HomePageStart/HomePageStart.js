@@ -9,8 +9,8 @@ export const HomePageStart = () => {
       <img src={chapPhoto} alt="ChapterPhoto" className={styles.img}/>
       <div className={styles.redBackground}>
         <h2 className={styles.title}> Lambda Chapter</h2>
-        <Link to="/about">
-            <button className={styles.button}>Learn More</button>
+        <Link to="/contact">
+            <button className={styles.button}>Connect</button>
         </Link>
       </div>
     </div>

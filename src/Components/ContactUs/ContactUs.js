@@ -1,6 +1,5 @@
 import React from 'react'
 import * as styles from './ContactUs.module.css'
-import instaLogo from '../../Images/instaPng.png'
 
 export const ContactUs = () => {
   return (
@@ -15,18 +14,23 @@ export const ContactUs = () => {
         </div>
 
         <div className={styles.bottomContainer}>
-            <span>President:</span>
-            <span>James Underwood</span>
-            <span>(510) 859 6884</span>
+            <h2 style={{ "font-size": "45px" }}>Additional Contact</h2>
 
-            <div className={styles.rush}>
-                <span>Rush Chairs:</span>
-                <span>Aditya Kumar</span>
-                <span>(201) 639 1114</span>
+            <div className={styles.info}>
+                <span>President:</span>
+                <span>James Underwood</span>
+                <span style={{ "font-weight": "bold"}}>(510) 859 6884</span>
 
-                <span>Dylan Patel</span>
-                <span>(732) 570 3545</span>
+                <div className={styles.rush}>
+                    <span>Rush Chairs:</span>
+                    <span>Aditya Kumar</span>
+                    <span style={{ "font-weight": "bold"}}>(201) 639 1114</span>
+
+                    <span>Dylan Patel</span>
+                    <span style={{ "font-weight": "bold"}}>(732) 570 3545</span>
+                </div>
             </div>
+            
             
         </div>
     </div>
