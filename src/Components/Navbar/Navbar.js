@@ -15,7 +15,6 @@ export const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // Use useEffect to add or remove the body class for disabling scrolling
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add(styles.noScroll);
