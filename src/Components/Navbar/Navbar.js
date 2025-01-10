@@ -5,6 +5,24 @@ import instaLogo from '../../Images/instaPng.png';
 import { Link } from 'gatsby';
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add(styles.noScroll);
+    } else {
+      document.body.classList.remove(styles.noScroll);
+    }
+  }, [isMenuOpen]);
+
   return (
     <nav className={styles.navbar}>
       {/* Logo Section */}
