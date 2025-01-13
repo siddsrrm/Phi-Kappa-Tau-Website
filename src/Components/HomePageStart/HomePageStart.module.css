@@ -1,17 +1,17 @@
 .container {
     display: flex;
-    width: 100vw;
-    height: 85vh; 
+    width: 100%;
+    
 }
 
 .img {
-    width: 48%;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
 
 .redBackground {
-    width: 52%; 
+    width: 50%; 
     background-color: maroon;
     display: flex;
     align-items: center;
