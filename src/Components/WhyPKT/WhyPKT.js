@@ -5,7 +5,7 @@ export const WhyPKT = () => {
   return (
     <div className={styles.container}>
         <h1 className={styles.title}>Why Phi Kappa Tau?</h1>
-        <div className={styles.textContainer}>
+        <div>
             <h3 className={styles.text}>
               The Phi Kappa Tau Fraternity at Purdue Univeristy
             presents a remarkable 
