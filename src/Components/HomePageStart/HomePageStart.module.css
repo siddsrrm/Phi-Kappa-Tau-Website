@@ -22,14 +22,14 @@
 }
 
 .title {
-    color: gold;
+    color: #FFA500 ;
     font-size: 60px;
     margin-bottom: 20px; 
     font-family: "Roboto Slab", serif;
 }
 
 .button {
-    background-color: gold;
+    background-color: #FFA500 ;
     color: black; 
     padding: 20px 30px; 
     border: none; 
