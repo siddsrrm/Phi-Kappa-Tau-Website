@@ -10,8 +10,8 @@
     gap: 90px;
     background-color: black;
     color: #fff;
-    min-height: 100vh; 
 }
+
 
 
 
@@ -94,6 +94,7 @@ a {
         gap: 90px;
         background-color: black;
         color: #fff; 
+        min-height: 100vh; 
     }
 
     .follow {
@@ -101,6 +102,10 @@ a {
         font-size: 20px;
 
         margin-top: 20px;
+    }
+
+    .main-content{
+        flex: 1;
     }
 }
 
