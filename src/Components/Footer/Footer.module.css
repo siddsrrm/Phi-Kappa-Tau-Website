@@ -1,7 +1,4 @@
-body, html {
-    height: 100%;
-    margin: 0; 
-}
+
 
 .container {
     display: flex;
@@ -12,8 +9,11 @@ body, html {
     margin-top: 110px;
     gap: 90px;
     background-color: black;
-    color: #fff; 
+    color: #fff;
+    min-height: 100vh; 
 }
+
+
 
 .titleAddress {
     display: flex;
