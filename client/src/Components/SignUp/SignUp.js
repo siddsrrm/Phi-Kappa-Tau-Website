@@ -62,7 +62,7 @@ export const SignUp = () => {
             onChange={handleChange}
             required
             />
-            <div className={styles.buttonContainer}>
+            <div>
               <button className={styles.button} type='submit'>Sign up</button>
             </div>
             
