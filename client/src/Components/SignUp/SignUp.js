@@ -17,9 +17,36 @@ export const SignUp = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const [showPopup, setShowPopoup] = useState(false)
+
+
+  
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log("Form Data:", formData)
+    
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Email sent Successfully")
+        setShowPopoup(true)
+        setTimeout(() => {
+          setShowPopoup(false)
+        }, 2000)
+      }
+      else {
+        console.log("Failed to send email")
+      }
+    } catch(error) {
+      console.error('Error:', error)
+    }
 
     setFormData({
       firstName: "",
@@ -67,6 +94,12 @@ export const SignUp = () => {
             </div>
             
         </form>
+
+        {showPopup && (
+          <div className={styles.popup}>
+            Email Sent Successfully!
+          </div>
+        )}
         
     </div>
   )
