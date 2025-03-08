@@ -21,6 +21,10 @@ const transporter = nodemailer.createTransport ({
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Backend is running");
+});
+
 app.post("/send-email", (req, res) => {
     const {firstName, lastName, email} = req.body;
 

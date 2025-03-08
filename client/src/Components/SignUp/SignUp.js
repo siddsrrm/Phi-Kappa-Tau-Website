@@ -20,8 +20,6 @@ export const SignUp = () => {
   const [showPopup, setShowPopoup] = useState(false)
 
 
-  
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     
