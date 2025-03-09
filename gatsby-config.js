@@ -3,7 +3,14 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.phikappataupurdue.com`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'static/favicon.png',
+      },
+   },
+  ],
 }
