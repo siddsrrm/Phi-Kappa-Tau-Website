@@ -11,6 +11,21 @@ module.exports = {
       options: {
         icon: 'static/favicon.png',
       },
-   },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-9RPJ9X6WBC",
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true, 
+          respectDNT: true,
+        },
+      },
+    },
   ],
 }
