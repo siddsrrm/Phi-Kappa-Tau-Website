@@ -23,10 +23,10 @@ export const ContactUs = () => {
 
                 <div className={styles.rush}>
                     <span>Rush Chairs:</span>
-                    <span>Aditya Kumar</span>
-                    <span style={{ "font-weight": "bold"}}>(201) 639 1114</span>
+                    <span>Michael Jones</span>
+                    <span style={{ "font-weight": "bold"}}>(314) 873 4708</span>
 
-                    <span>Dylan Patel</span>
+                    <span>Graydon Hanlon</span>
                     <span style={{ "font-weight": "bold"}}>(732) 570 3545</span>
                 </div>
             </div>
