@@ -18,7 +18,7 @@ export const Footer = () => {
         
             
         <div className={styles.img}>
-            <img src={logo} alt='logo' className={styles.logoImg}/>
+            <img src={logo.src} alt='logo' className={styles.logoImg}/>
         </div>
 
         <div className={styles.media}>

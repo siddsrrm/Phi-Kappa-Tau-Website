@@ -10,7 +10,7 @@ export const HomePageStart = () => {
   return (
     <section ref={ref} className={`${styles.container} ${inView ? styles.inView : ''}`}>
       <div className={styles.imgWrap}>
-        <img src={chapPhoto} alt="Lambda Chapter members" className={styles.img}/>
+        <img src={chapPhoto.src} alt="Lambda Chapter members" className={styles.img}/>
         <div className={styles.glow} aria-hidden="true" />
       </div>
       <div className={styles.redBackground}>
