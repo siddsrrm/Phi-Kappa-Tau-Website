@@ -21,7 +21,22 @@ export const Navbar = () => {
     } else {
       document.body.classList.remove(styles.noScroll);
     }
+
+    return () => {
+      document.body.classList.remove(styles.noScroll);
+    };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 800) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <nav className={styles.navbar}>
@@ -63,15 +78,17 @@ export const Navbar = () => {
             Contact
           </Link>
         </li>
-        <a
-          href="https://www.instagram.com/phitaupurdue/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.insta}
-          onClick={closeMenu}
-        >
-          <img src={instaLogo} alt="Instagram icon" className={styles.instaImg} />
-        </a>
+        <li>
+          <a
+            href="https://www.instagram.com/phitaupurdue/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.insta}
+            onClick={closeMenu}
+          >
+            <img src={instaLogo} alt="Instagram icon" className={styles.instaImg} />
+          </a>
+        </li>
       </ul>
     </nav>
   );
