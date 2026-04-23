@@ -4,6 +4,8 @@ import logo from '../../Images/logo.png'
 
 
 export const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
     <footer className={styles.container}>
         <div className={styles.titleAddress}> 
@@ -30,6 +32,7 @@ export const Footer = () => {
                 </a>
             </div>
         </div>
+        <span className={styles.copyright}>© {year} Phi Kappa Tau - Lambda Chapter</span>
     </footer>
   )
 }

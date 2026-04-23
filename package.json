@@ -1,0 +1,11 @@
+{
+  "name": "phi-kappa-tau-website-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix client run develop",
+    "start": "npm --prefix client run develop",
+    "build": "npm --prefix client run build",
+    "serve": "npm --prefix client run serve",
+    "clean": "npm --prefix client run clean"
+  }
+}

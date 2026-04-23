@@ -30,7 +30,7 @@ export const Navbar = () => {
         <img src={logo} alt="logo" className={styles.logoImg} />
         <div>
           <h1 className={styles.name}>PHI KAPPA TAU</h1>
-          <h1 className={styles.schoolName}>Purdue</h1>
+          <p className={styles.schoolName}>Purdue Lambda Chapter</p>
         </div>
       </div>
 

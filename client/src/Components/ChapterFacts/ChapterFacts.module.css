@@ -1,45 +1,88 @@
 
+.section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 14px 0 18px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 700ms cubic-bezier(.2,.9,.2,1), opacity 700ms ease;
+}
+
+.inView {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.kicker {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #7f1d1d;
+}
+
 .factsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 90px;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 24px 0 40px;
 }
 
 .factCircle{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: maroon;
-    color: #FFA500;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 33px;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(155deg, #7f1d1d 0%, #450a0a 100%);
+    color: #f8fafc;
+    min-height: 180px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.16);
+    padding: 24px;
+    transform: translateY(10px) scale(0.98);
+    opacity: 0;
+    transition: transform 650ms cubic-bezier(.2,.9,.2,1), opacity 650ms ease, box-shadow 200ms ease;
+}
+
+.inView .factCircle {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.inView .factCircle:nth-child(1) { transition-delay: 120ms; }
+.inView .factCircle:nth-child(2) { transition-delay: 200ms; }
+.inView .factCircle:nth-child(3) { transition-delay: 280ms; }
+.inView .factCircle:nth-child(4) { transition-delay: 360ms; }
+
+.factCircle:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
 }
 
 .factTitle{
-    font-family: "Roboto Slab", serif;
-    font-size: 23px;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #fcd34d;
+    margin-bottom: 14px;
 }
 
 
 
 .factValue{
     font-family: "Roboto Slab", serif;
-    font-size: 30px;
+    font-size: 46px;
+    line-height: 1;
 }
 
 .title{
     text-align: center;
     font-family: "Roboto Slab", serif;
-    font-size: 45px;
-    padding: 60px;
+    font-size: 44px;
+    padding: 8px 0 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -48,10 +91,37 @@
 .title::after{
     content: "";
     position: absolute;
-    height: 15px;
-    bottom: 40px;
-    width: 350px;
-    margin-top: 20px;
-    border-top: 5px solid maroon;
-    border-radius: 40%;
+    bottom: -8px;
+    width: 180px;
+    border-top: 4px solid #f59e0b;
+    border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+    .section {
+        margin: 0 16px;
+    }
+
+    .factsContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .factsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section,
+    .factCircle {
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
 }

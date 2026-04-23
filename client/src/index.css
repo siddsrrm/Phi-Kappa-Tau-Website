@@ -6,3 +6,24 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+:root {
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --brand: #7f1d1d;
+  --brand-strong: #450a0a;
+  --accent: #f59e0b;
+  --radius: 18px;
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top left, #fff7ed 0%, var(--bg) 42%);
+  color: var(--text);
+}
