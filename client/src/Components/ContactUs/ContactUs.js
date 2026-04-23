@@ -18,8 +18,8 @@ export const ContactUs = () => {
 
             <div className={styles.info}>
                 <span>President:</span>
-                <span>James Underwood</span>
-                <span style={{ "font-weight": "bold"}}>(510) 859 6884</span>
+                <span>Easton Clark</span>
+                <span style={{ "font-weight": "bold"}}>(507) 217 9968</span>
 
                 <div className={styles.rush}>
                     <span>Rush Chairs:</span>
