@@ -1,25 +1,138 @@
-.form {
-    width: 100%;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px; 
+.wrapper {
+  width: 100%;
+  max-width: 1240px;
+  margin: 20px auto 36px;
+  padding: 0 18px;
 }
 
-.iconSpinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-  
-  .spinner {
-    font-size: 2rem; 
-    color: #007bff;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.hero {
+  background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
+  border-radius: 20px;
+  padding: 44px;
+  color: #f8fafc;
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.2);
+  margin-bottom: 22px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fcd34d;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 44px;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  max-width: 780px;
+  color: #e2e8f0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.cardTitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+.list {
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+  color: #334155;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.ctaSection {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ctaText {
+  color: #334155;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ctaButton {
+  text-decoration: none;
+  border: none;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #111827;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 34px;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    padding: 0 14px;
+  }
+
+  .hero,
+  .card,
+  .ctaSection {
+    padding: 20px;
+  }
+
+  .subtitle,
+  .list,
+  .ctaText {
+    font-size: 15px;
+  }
+}
