@@ -16,18 +16,6 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.classList.add(styles.noScroll);
-    } else {
-      document.body.classList.remove(styles.noScroll);
-    }
-
-    return () => {
-      document.body.classList.remove(styles.noScroll);
-    };
-  }, [isMenuOpen]);
-
-  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 800) {
         setIsMenuOpen(false);
@@ -39,7 +27,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
       {/* Logo Section */}
       <div className={styles.logoContainer}>
         <img src={logo} alt="logo" className={styles.logoImg} />
