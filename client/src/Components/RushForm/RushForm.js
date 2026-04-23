@@ -1,6 +1,6 @@
 import React from 'react'
 import * as styles from './RushForm.module.css'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 export const RushForm = () => {
   return (
@@ -40,7 +40,7 @@ export const RushForm = () => {
         <p className={styles.ctaText}>
           Interested in learning more about rush and meeting the chapter?
         </p>
-        <Link to="/contact" className={styles.ctaButton}>
+        <Link href="/contact" className={styles.ctaButton}>
           Contact the Chapter
         </Link>
       </div>
