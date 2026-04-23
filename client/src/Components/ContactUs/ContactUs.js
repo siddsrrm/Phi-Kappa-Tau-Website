@@ -14,20 +14,20 @@ export const ContactUs = () => {
         </div>
 
         <div className={styles.bottomContainer}>
-            <h2 style={{ "font-size": "45px" }}>Additional Contact</h2>
+            <h2 style={{ fontSize: "45px" }}>Additional Contact</h2>
 
             <div className={styles.info}>
                 <span>President:</span>
                 <span>Easton Clark</span>
-                <span style={{ "font-weight": "bold"}}>(507) 217 9968</span>
+                <span style={{ fontWeight: "bold"}}>(507) 217 9968</span>
 
                 <div className={styles.rush}>
                     <span>Rush Chairs:</span>
                     <span>Michael Jones</span>
-                    <span style={{ "font-weight": "bold"}}>(314) 873 4708</span>
+                    <span style={{ fontWeight: "bold"}}>(314) 873 4708</span>
 
                     <span>Graydon Hanlon</span>
-                    <span style={{ "font-weight": "bold"}}>(732) 570 3545</span>
+                    <span style={{ fontWeight: "bold"}}>(732) 570 3545</span>
                 </div>
             </div>
             
