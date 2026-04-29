@@ -10,15 +10,14 @@ export const HomePageStart = () => {
   return (
     <section ref={ref} className={`${styles.container} ${inView ? styles.inView : ''}`}>
       <div className={styles.imgWrap}>
-        <img src={chapPhoto.src} alt="Lambda Chapter members" className={styles.img}/>
+        <img src={chapPhoto} alt="Lambda Chapter members" className={styles.img}/>
         <div className={styles.glow} aria-hidden="true" />
       </div>
       <div className={styles.redBackground}>
-        <p className={styles.kicker}>Purdue University</p>
-        <h2 className={styles.title}>Lambda Chapter</h2>
+        <p className={styles.kicker}>Lambda Chapter at Purdue University</p>
+        <h2 className={styles.title}>Social Fraternity for Professional Engineers</h2>
         <p className={styles.subtitle}>
-          An engineering-minded brotherhood focused on building leaders—on campus and
-          in your career.
+          Work Hard, Play Hard.
         </p>
 
         <div className={styles.chips}>

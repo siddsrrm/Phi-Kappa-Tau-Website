@@ -39,10 +39,11 @@ export const WhyPKT = () => {
       <div className={styles.long}>
         <h3 className={styles.longTitle}>Why Phi Kappa Tau?</h3>
         <p className={styles.text}>
-          Phi Kappa Tau at Purdue is a brotherhood built around personal growth, academic
-          success, and community impact. You’ll find a supportive environment that reinforces
+          Phi Kappa Tau at Purdue is a Social Fraternity for Professional Engineers, built
+          around personal growth, academic success, and community impact. Our motto is
+          Work Hard, Play Hard, and you’ll find a supportive environment that reinforces
           accountability and leadership while connecting you with a network of alumni and mentors.
-          If you’re the type of person who wants to build, improve, and lead—this is your place.
+          If you’re the type of person who wants to build, improve, and lead, this is your place.
         </p>
       </div>
     </section>

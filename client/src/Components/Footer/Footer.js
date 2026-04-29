@@ -18,7 +18,7 @@ export const Footer = () => {
         
             
         <div className={styles.img}>
-            <img src={logo.src} alt='logo' className={styles.logoImg}/>
+            <img src={logo} alt='logo' className={styles.logoImg}/>
         </div>
 
         <div className={styles.media}>
@@ -29,6 +29,12 @@ export const Footer = () => {
                 </a>
                 <a href="https://www.facebook.com/LambdaPKT/" target="_blank" rel="noopener noreferrer">
                     Facebook
+                </a>
+                <a href="https://www.linkedin.com/company/phi-kappa-tau-lambda-chapter" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                <a href="https://www.linkedin.com/groups/18975042/" target="_blank" rel="noopener noreferrer">
+                    Alumni LinkedIn Group
                 </a>
             </div>
         </div>
