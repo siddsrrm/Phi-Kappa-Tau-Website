@@ -30,7 +30,7 @@ export const Navbar = () => {
     <nav className={`${styles.navbar} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
       {/* Logo Section */}
       <div className={styles.logoContainer}>
-        <img src={logo} alt="logo" className={styles.logoImg} />
+        <img src={logo.src} alt="logo" className={styles.logoImg} />
         <div>
           <h1 className={styles.name}>PHI KAPPA TAU</h1>
           <p className={styles.schoolName}>Purdue Lambda Chapter</p>
@@ -74,7 +74,7 @@ export const Navbar = () => {
             className={styles.insta}
             onClick={closeMenu}
           >
-            <img src={instaLogo} alt="Instagram icon" className={styles.instaImg} />
+            <img src={instaLogo.src} alt="Instagram icon" className={styles.instaImg} />
           </a>
         </li>
       </ul>
