@@ -6,7 +6,7 @@ export const ChapterFacts = () => {
     const facts = [
         {title: 'Founded in', value: '1920'},
         {title: 'Chapter Gpa', value: '3.4'},
-        {title: 'Actives', value: '75'},
+        {title: 'Active Members', value: '75'},
         {title: 'Alumni', value: '2600+'},
     ]
 

@@ -64,7 +64,7 @@ const HousePage = () => {
           <article className={`${styles.card} ${styles.reveal}`} style={{ '--delay': '460ms' }}>
             <h3>Renovated study spaces</h3>
             <p>
-              The recently renovated library and study area includes two high-performance
+              Our recently renovated library and study area includes two high-performance
               computers plus a deep collection of class resources and previous coursework
               knowledge to support academic success.
             </p>
