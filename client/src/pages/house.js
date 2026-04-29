@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar } from "../Components/Navbar/Navbar"
 import { Footer } from '../Components/Footer/Footer'
 import * as styles from './house.module.css'
+import housePhoto from '../Images/416.png'
 
 const HousePage = () => {
   return (
@@ -23,7 +24,7 @@ const HousePage = () => {
         </div>
 
         <img
-          src="/photos/416.png"
+          src={housePhoto}
           alt="Phi Kappa Tau house at 416 N Chauncey Ave"
           className={`${styles.heroImage} ${styles.reveal}`}
           style={{ '--delay': '170ms' }}
