@@ -37,7 +37,7 @@ const alumni = () => {
               borderRadius: '10px'
             }}
           >
-            Join our Professional Network
+            Click to Join our Professional Network
           </a>
         </div>
         <SignUp />

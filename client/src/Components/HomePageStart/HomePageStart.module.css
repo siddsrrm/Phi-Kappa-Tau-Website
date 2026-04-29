@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
     width: 100%;
     min-height: 74vh;
     margin: 18px auto 32px;
@@ -19,14 +20,20 @@
 
 .imgWrap {
     position: relative;
-    width: 50%;
-    overflow: hidden;
+    width: 52%;
+    display: flex;
+    align-items: center;      /* vertically center */
+    justify-content: flex-end; /* push image to the right */
+    padding-right: 32px;      /* small margin from edge */
+    box-sizing: border-box;
 }
 
 .img {
-    width: 100%;
+    width: auto;              /* stop stretching full width */
+    max-width: 100%;           /* control size */
     height: auto;
     object-fit: cover;
+    border-radius: 32px;      /* rounded corners */
     transform: scale(1.02);
     transition: transform 800ms cubic-bezier(.2,.9,.2,1);
 }
@@ -46,13 +53,13 @@
 
 .redBackground {
     width: 50%; 
-    background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    padding: 56px;
+    padding: 48px;
+    padding-right: 0px;
     color: #f8fafc;
     position: relative;
 }
@@ -68,7 +75,7 @@
 
 .title {
     color: #f8fafc;
-    font-size: 58px;
+    font-size: 48px;
     margin-bottom: 16px;
     font-family: "Roboto Slab", serif;
     line-height: 1.05;

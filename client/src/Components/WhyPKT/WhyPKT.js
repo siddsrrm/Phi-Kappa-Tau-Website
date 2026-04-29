@@ -7,7 +7,7 @@ export const WhyPKT = () => {
 
   return (
     <section ref={ref} className={`${styles.container} ${inView ? styles.inView : ''}`}>
-      <p className={styles.kicker}>Engineering Focus</p>
+      <p className={styles.kicker}>Our Focus as an Engineering Fraternity</p>
       <h1 className={styles.title}>Build more than a resume</h1>
 
       <div className={styles.grid}>

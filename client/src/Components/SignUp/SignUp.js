@@ -56,7 +56,7 @@ export const SignUp = () => {
 
   return (
     <div className={styles.container}>
-        <h1 className={styles.title}>Participate in Our Network</h1>
+        <h1 className={styles.title}>Participate in Our Journey</h1>
         <h3 className={styles.header}>Sign up with your email to receive semester newsletters and stay updated on alumni events</h3>
 
         <form className={styles.form} onSubmit={handleSubmit}>
