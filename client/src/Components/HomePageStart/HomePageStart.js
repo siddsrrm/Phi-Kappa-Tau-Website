@@ -1,7 +1,7 @@
 import React from 'react'
 import * as styles from './HomePageStart.module.css'
 import chapPhoto from '../../Images/chapterPhoto.jpg'
-import Link from 'next/link'
+import { Link } from 'gatsby'
 import { useInView } from "../../hooks/useInView"
 
 export const HomePageStart = () => {
@@ -28,7 +28,7 @@ export const HomePageStart = () => {
           <span className={styles.chip}>Alumni Network</span>
         </div>
 
-        <Link href="/contact">
+        <Link to="/contact">
             <button className={styles.button}>Connect With Us</button>
         </Link>
       </div>

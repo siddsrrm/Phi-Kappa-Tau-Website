@@ -2,9 +2,10 @@
   "name": "phi-kappa-tau-website-root",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix client run dev",
-    "start": "npm --prefix client run start",
+    "dev": "npm --prefix client run develop",
+    "start": "npm --prefix client run develop",
     "build": "npm --prefix client run build",
-    "clean": "echo \"No clean script configured for Next.js\""
+    "serve": "npm --prefix client run serve",
+    "clean": "npm --prefix client run clean"
   }
 }

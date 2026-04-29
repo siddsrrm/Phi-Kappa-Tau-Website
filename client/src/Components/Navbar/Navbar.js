@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as styles from './Navbar.module.css';
 import logo from '../../Images/logo.png';
 import instaLogo from '../../Images/instaPng.png';
-import Link from 'next/link';
+import { Link } from 'gatsby';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,22 +47,22 @@ export const Navbar = () => {
       {/* Menu Items */}
       <ul className={`${styles.navItems} ${isMenuOpen ? styles.menuOpen : ''}`}>
         <li>
-          <Link href="/" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="/alumni" onClick={closeMenu}>
+          <Link to="/alumni" onClick={closeMenu}>
             Alumni
           </Link>
         </li>
         <li>
-          <Link href="/rush" onClick={closeMenu}>
+          <Link to="/rush" onClick={closeMenu}>
             Rush
           </Link>
         </li>
         <li>
-          <Link href="/contact" onClick={closeMenu}>
+          <Link to="/contact" onClick={closeMenu}>
             Contact
           </Link>
         </li>
