@@ -28,7 +28,7 @@ export const ContactUs = () => {
       people: [{ name: "Matthew Rodgers", major: "Electrical Engineering '28"}]
     },
     {
-      role: "Rush Director",
+      role: "Recruitment",
       people: [
         { name: "Jason Klutho", major: "Computer Engineering '27", phone: "(314) 835-8255" },
       ]
@@ -36,6 +36,10 @@ export const ContactUs = () => {
     {
       role: "Philanthropy",
       people: [{ name: "Alex Colucci", major: "Mechanical Engineering '29"}]
+    },
+    {
+      role: "Scholarship",
+      people: [{ name: "Nick Van Wagner", major: "Computer Science, Data Science '28"}]
     }
   ]
 
