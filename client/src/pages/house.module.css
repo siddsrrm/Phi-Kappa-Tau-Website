@@ -157,6 +157,34 @@
   line-height: 1.8;
 }
 
+.contactCard {
+  margin-top: 18px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.contactCard h3 {
+  color: #7f1d1d;
+  margin-bottom: 10px;
+}
+
+.contactName {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.contactMajor {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #475569;
+  font-weight: 500;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(22px) scale(0.995);

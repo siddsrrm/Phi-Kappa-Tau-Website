@@ -67,6 +67,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="/philanthropy" onClick={closeMenu}>
+            Philanthropy
+          </Link>
+        </li>
+        <li>
           <Link to="/contact" onClick={closeMenu}>
             Contact
           </Link>

@@ -2,38 +2,82 @@ import React from 'react'
 import * as styles from './ContactUs.module.css'
 
 export const ContactUs = () => {
+  const contacts = [
+    {
+      role: "President",
+      people: [{ name: "Easton Clark", major: "Aerospace Engineering '28", phone: "(507) 217-9968", email: "president.phitaupurdue@gmail.com" }]
+    },
+    {
+      role: "Vice President",
+      people: [{ name: "Brendan Costello", major: "Mechanical Engineering '28" }]
+    },
+    {
+      role: "Treasurer",
+      people: [{ name: "Michael Ricks", major: "Geology and Geophysics '28", email: "treasurer.phitaupurdue@gmail.com" }]
+    },
+    {
+      role: "Risk Manager",
+      people: [{ name: "Nick Castellana", major: "Chemical Engineering '28"}]
+    },
+    {
+      role: "House Manager",
+      people: [{ name: "Evan Bucklew", major: "Mechanical Engineering '28"}]
+    },
+    {
+      role: "Alumni Relations",
+      people: [{ name: "Matthew Rodgers", major: "Electrical Engineering '28"}]
+    },
+    {
+      role: "Rush Director",
+      people: [
+        { name: "Jason Klutho", major: "Computer Engineering '27", phone: "(314) 835-8255" },
+      ]
+    },
+    {
+      role: "Philanthropy",
+      people: [{ name: "Alex Colucci", major: "Mechanical Engineering '29"}]
+    }
+  ]
+
   return (
     <div>
-        <div className={styles.topContainer}>
-            <h2 className={styles.header}>Contact Us</h2>
-            <span className={styles.middleText}>Please feel free to contact us. 
-                We are happy to answer questions about rush, 
-                life as an active, and any other inquiries via email. 
-            </span>
-            <span className={styles.middleText}>purduephitau@gmail.com</span>
+      <div className={styles.topContainer}>
+        <h2 className={styles.header}>Contact Us</h2>
+        <span className={styles.middleText}>
+          Reach out to our executive team directly with questions about rush, life as an active, or anything else about Phi Kappa Tau.
+        </span>
+      </div>
+
+      <div className={styles.bottomContainer}>
+        <h2 className={styles.sectionHeader}>Executive Contacts</h2>
+
+        <div className={styles.cardGrid}>
+          {contacts.map((group) => (
+            <article key={group.role} className={styles.card}>
+              <h3 className={styles.cardTitle}>{group.role}</h3>
+
+              <div className={styles.peopleList}>
+                {group.people.map((person) => (
+                  <div key={`${group.role}-${person.name}`} className={styles.person}>
+                    <span className={styles.personName}>{person.name}</span>
+                    <span className={styles.major}>{person.major}</span>
+                    {person.phone && (
+                      <a className={styles.phone} href={`tel:${person.phone.replace(/[^\d]/g, '')}`}>
+                        {person.phone}
+                      </a>
+                    )}
+                    {person.email && (
+                      <a className={styles.email} href={`mailto:${person.email}`}>
+                        {person.email}
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
-
-        <div className={styles.bottomContainer}>
-            <h2 style={{ fontSize: "45px" }}>Additional Contact</h2>
-
-            <div className={styles.info}>
-                <span>President:</span>
-                <span>Easton Clark</span>
-                <span style={{ fontWeight: "bold"}}>(507) 217 9968</span>
-
-                <div className={styles.rush}>
-                    <span>Rush Chairs:</span>
-                    <span>Michael Jones</span>
-                    <span style={{ fontWeight: "bold"}}>(314) 873 4708</span>
-
-                    <span>Graydon Hanlon</span>
-                    <span style={{ fontWeight: "bold"}}>(732) 570 3545</span>
-                </div>
-            </div>
-            
-            
-        </div>
+      </div>
     </div>
-    
   )
 }

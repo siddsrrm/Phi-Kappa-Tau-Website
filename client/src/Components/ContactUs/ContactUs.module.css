@@ -2,46 +2,154 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: maroon;
-    padding: 90px;
+    background: linear-gradient(135deg, #6b0f1a 0%, #a32035 100%);
+    padding: 90px 90px 80px;
     color: white;
-    gap: 40px;
-    min-height: 500px;
+    gap: 24px;
+    min-height: 340px;
 }
 
 .header {
-    font-size: 50px;
+    font-size: 56px;
+    margin: 0;
+    letter-spacing: 0.03em;
 }
 
 .middleText{
-    font-size: 20px;
-    max-width: 400px;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 760px;
 }
 
 .bottomContainer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 28px;
     padding: 90px;
-    font-size: 25px;
+    background-color: #f8f9fc;
+}
+
+.sectionHeader{
+    margin: 0;
+    font-size: 42px;
+    color: #1e1e22;
+    letter-spacing: 0.02em;
+}
+
+.cardGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background: #ffffff;
+    border: 1px solid #e7e9f2;
+    border-radius: 18px;
+    padding: 34px;
+    min-height: 260px;
+    box-shadow: 0 12px 24px rgba(16, 24, 40, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(16, 24, 40, 0.12);
+}
+
+.cardTitle{
+    margin: 0;
+    font-size: 28px;
+    color: #86142a;
+}
+
+.peopleList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding-top: 14px;
+    border-top: 1px solid #eceff5;
+}
+
+.person:first-child{
+    border-top: 0;
+    padding-top: 0;
+}
+
+.personName{
+    font-size: 22px;
+    font-weight: 600;
+    color: #13151a;
+}
+
+.major{
+    font-size: 16px;
     font-weight: 500;
-    
+    color: #5a6074;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-    gap: 30px;
+.phone{
+    font-size: 19px;
+    font-weight: 700;
+    color: #3b4256;
+    text-decoration: none;
 }
 
-.rush{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+.phone:hover{
+    color: #86142a;
 }
 
+.email{
+    font-size: 16px;
+    font-weight: 600;
+    color: #86142a;
+    text-decoration: none;
+}
+
+.email:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 900px){
+    .topContainer{
+        padding: 72px 28px 64px;
+    }
+
+    .header{
+        font-size: 44px;
+    }
+
+    .middleText{
+        font-size: 19px;
+    }
+
+    .bottomContainer{
+        padding: 64px 28px 72px;
+    }
+
+    .sectionHeader{
+        font-size: 34px;
+    }
+
+    .cardGrid{
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card{
+        min-height: 0;
+        padding: 28px;
+    }
+}

@@ -80,6 +80,12 @@ const HousePage = () => {
             <li>Designed to balance convenience, academics, and chapter life</li>
           </ul>
         </div>
+
+        <div className={`${styles.contactCard} ${styles.reveal}`} style={{ '--delay': '620ms' }}>
+          <h3>House Manager Contact</h3>
+          <p className={styles.contactName}>Evan Bucklew</p>
+          <p className={styles.contactMajor}>Mechanical Engineering '28</p>
+        </div>
       </section>
 
       <Footer />

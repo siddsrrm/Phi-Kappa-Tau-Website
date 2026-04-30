@@ -25,6 +25,8 @@
     align-items: center;      /* vertically center */
     justify-content: flex-end; /* push image to the right */
     padding-right: 32px;      /* small margin from edge */
+    padding-left: 32px;
+    padding-bottom: 32px;
     box-sizing: border-box;
 }
 
