@@ -18,9 +18,16 @@ const HousePage = () => {
             great restaurants and neighborhood spots. It is a convenient home base for
             classes, chapter life, and campus involvement.
           </p>
-          <div className={styles.addressCard}>
+          <a
+            className={styles.addressCard}
+            href="https://maps.google.com/?q=416+N+Chauncey+Ave,+West+Lafayette,+IN+47906"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+          >
+            <span aria-hidden="true">📍</span>
             416 N Chauncey Ave, West Lafayette, IN 47906
-          </div>
+          </a>
         </div>
 
         <img
