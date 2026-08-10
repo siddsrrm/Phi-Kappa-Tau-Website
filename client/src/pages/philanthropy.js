@@ -29,9 +29,9 @@ const Philanthropy = () => {
   }, [slides.length])
 
   const philanthropyContact = {
-    name: "Philanthropy Chair (Add Name)",
+    name: "Alex Colucci",
     role: "Philanthropy Contact",
-    email: "add-contact-email@purdue.edu"
+    email: "purduecorgirace@gmail.com"
   }
 
   return (
